@@ -1,0 +1,34 @@
+/* 기본 스타일 (모바일 화면에 최적화된 작은 크기 기준) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+/* 💻 미디어 쿼리: 화면 너비가 768px 이상일 때 데스크톱 스타일 적용 */
+@media screen and (min-width: 768px) {
+    body {
+        /* 배경색을 바꿔서 스타일이 적용된 것을 확인해 보세요. */
+        background-color: #ecf0f1; 
+        max-width: 1000px;
+        margin: 20px auto; /* 중앙 정렬 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        font-size: 2.5em; /* 글씨 크기 키우기 */
+    }
+}
